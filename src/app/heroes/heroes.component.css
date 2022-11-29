@@ -4,10 +4,25 @@
   list-style-type: none;
   padding: 0;
   width: 15em;
+  text-align: center;
 }
+.mid {text-align: center;}
+.mid1 {text-align: right;
+  display: grid;
+justify-content: center;
+}
+input {
+  /* display: block; */
+  width: 30%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
 .heroes li {
   position: relative;
   cursor: pointer;
+  text-align: left;
 }
 
 .heroes li:hover {
@@ -15,9 +30,9 @@
 }
 
 .heroes a {
-  color: #333;
+  color: #f7e7e7;
   text-decoration: none;
-  background-color: #EEE;
+  background-color: #0a0a0a;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
@@ -41,7 +56,7 @@
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #405061;
+  background-color: #0030ff;
   line-height: 1em;
   position: relative;
   left: -1px;
@@ -51,4 +66,31 @@
   text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+.add-button {
+ padding: .5rem 1.5rem;
+ font-size: 1rem;
+ margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+button.delete {
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  background-color: white;
+  color:  #525252;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+}
+
+button.delete:hover {
+  background-color: #525252;
+  color: white;
 }
